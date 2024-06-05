@@ -32,7 +32,7 @@ privateKey;tier;quantity
 Для каждого кошелька выбирается рандомный.
 ```js
 const RPC_URLS = [
-  'https://rpc.ankr.com/zksync_era',
-  'https://mainnet.era.zksync.io',
+  'https://rpc.ankr.com/arbitrum',
+  'https://arbitrum.llamarpc.com',
 ];
 ```
