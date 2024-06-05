@@ -108,7 +108,7 @@ async function prepareForMint(privateKey, tier, quantity) {
     await sleep(1000);
   }
 
-  for (let attempts = 2; attempts >= 0; attempts--) {
+  for (let attempts = 9; attempts >= 0; attempts--) {
     try {
       await mintNode(wallet, nodeSaleContract, wethCost, allocation);
 
@@ -147,7 +147,7 @@ async function mintNode(wallet, nodeSaleContract, amount, allocation) {
 
   const signedTx = await wallet.signTransaction(populatedTx);
 
-  for (let attempts = 4; attempts >= 0; attempts--) {
+  for (let attempts = 2; attempts >= 0; attempts--) {
     try {
       const transaction = await wallet.provider.broadcastTransaction(signedTx);
 
