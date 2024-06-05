@@ -16,6 +16,8 @@ npm start
 ```
 
 ## Формат кошельков в wallets.txt
+> **_ВАЖНО:_** Один кошелек может взять за раз только один тир!
+
 ```txt
 privateKey;tier;quantity
 
