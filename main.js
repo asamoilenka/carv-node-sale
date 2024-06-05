@@ -147,7 +147,7 @@ async function mintNode(wallet, nodeSaleContract, amount, allocation) {
 
   const signedTx = await wallet.signTransaction(populatedTx);
 
-  for (let attempts = 1; attempts >= 0; attempts--) {
+  for (let attempts = 4; attempts >= 0; attempts--) {
     try {
       const transaction = await wallet.provider.broadcastTransaction(signedTx);
 
