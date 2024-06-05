@@ -1,0 +1,6 @@
+# Format:
+# privateKey;tier;quantity
+#
+# Example:
+# privateKey;1;2
+# privateKey;5;3
