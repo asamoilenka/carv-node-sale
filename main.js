@@ -141,8 +141,8 @@ async function mintNode(wallet, nodeSaleContract, amount, allocation) {
     populatedTx.gasPrice = ethers.parseUnits('3.1', 'gwei');
   }
   if (populatedTx.maxFeePerGas) {
-    populatedTx.maxFeePerGas = ethers.parseUnits('15.1', 'gwei');
-    populatedTx.maxPriorityFeePerGas = ethers.parseUnits('11.1', 'gwei');
+    populatedTx.maxFeePerGas = ethers.parseUnits('10.1', 'gwei');
+    populatedTx.maxPriorityFeePerGas = ethers.parseUnits('6.1', 'gwei');
   }
 
   const signedTx = await wallet.signTransaction(populatedTx);
